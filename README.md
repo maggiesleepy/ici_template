@@ -218,14 +218,14 @@ T_lvr_land_A 屏東-2016-4.csv
 | hp_2016_model\<-lm(Original_Avg_House_Price_per_Ping_2016 \~  Medi_Service_per + Proportion_Dr_Ma_Uni_Pop+  Totalpop + magnitude_level+Ave_Income, data=final_data_1)   summary(hp_2016_model) |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-Result of 2016 housing price lagged regression model:
+Result of the 2016 housing price regression model:
 
 <img width="581" alt="Screen Shot 2024-07-10 at 6 35 56 PM" src="https://github.com/maggiesleepy/ici_template/assets/174100098/7ad64309-3b94-42f4-8dbc-d25eaac4f01b">
 
-From the result of 2016 housing price regression model, we can discover that:
+From the result of the 2016 housing price regression model, we can discover that:
 
 Medi_Service_per:  
-The amount of medical service for each person in an area is statistically significant but has a negative impact on the 2016 housing prices. Indicating that the more sufficient medical resources an area provide, the housing prices in 2016 will decrease
+The amount of medical service for each person in an area is statistically significant but has a negative impact on the 2016 housing prices. Indicating that the more sufficient medical resources an area provides, the housing prices in 2016 will decrease
 
 
 
