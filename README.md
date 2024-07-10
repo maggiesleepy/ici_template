@@ -226,7 +226,7 @@ Result of the 2016 housing price regression model:
 
 From the result of the 2016 housing price regression model, we can discover that:
 
-Medi_Service_per:  
+**Medi_Service_per:**
 The amount of medical service for each person in an area is statistically significant but has a negative impact on the 2016 housing prices. Indicating that the more sufficient medical resources an area provides, the housing prices in 2016 will decrease
 
 
