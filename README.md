@@ -213,7 +213,7 @@ T_lvr_land_A 屏東-2016-4.csv
 
 [Describe your analysis methods and include any visualizations or graphics that you used to present your findings. Explain the insights that you gained from your analysis and how they relate to your research question or problem statement.]
 
-To evaluate how the 2016 0206 Earthquake affected housing prices in southern Taiwan, we took Original_Avg_House_Price_per_Ping_2015 as our dependent variable to see if any factors correlate with it.
+To evaluate how the 2016 0206 Earthquake affected housing prices in southern Taiwan, we took Original_Avg_House_Price_per_Ping_2016 as the dependent variable of the 2016 housing price regression model to see if any factors correlate with it.
 
 2016 housing price regression model:
 
@@ -243,7 +243,7 @@ From the result of the 2016 housing price regression model, we can discover that
 5.  **Adjusted R-squared:**  
     The adjusted R-squared of this model is 0.6541, which means that the dependent variable is yet to be fully explained. It shows that there is still room for improvement.
 
-After seeing this result, we realized that we didn’t take lag periods into account, so we further conducted the 2016 housing price lagged regression model to see if the resulting adjusted R-squared would be better.
+After seeing this result, we realized that we didn’t take lag periods into account, so we further conducted the 2016 housing price lagged regression model to see if the resulting adjusted R-squared would be better. We put in the housing price of 2015 as the lagged term.
 
 2016 housing price lagged regression model:
 
@@ -258,21 +258,80 @@ Result of 2016 housing price lagged regression model:
 
 From the result of 2016 housing price lagged regression model, we can discover that:
 
-1.  **Original_Avg_House_Price_per_Ping_2015:**
-    The result shows the housing price in 2015 is statistically significant and has a positive impact on the 2016 housing prices. This means that if the housing price in 2015 is high, the housing price of 2016 will also go high.
+1.  **Original_Avg_House_Price_per_Ping_2015:  
+    **The result shows the housing price in 2015 is statistically significant and has a positive impact on the 2016 housing prices. This means that if the housing price in 2015 is high, the housing price of 2016 will also go high.
 
-2.  **magnitude_level:**
-    After adding a lagged term, the intensity of the 0206 Earthquake becomes statistically significant and has a negative correlation to the housing price of 2016. This result aligns with our hypothesis.
+2.  **magnitude_level:  
+    **After adding a lagged term, the intensity of the 0206 Earthquake becomes statistically significant and has a negative correlation to the housing price of 2016. This result aligns with our hypothesis.
+
+3.  **Adjusted R-squared:  
+    **We can discover that the adjusted R-squared increases from 0.6541 to 0.8698, which means the lagged term is an important variable that were missing in the last model.
+
+We can conclude that a lagged term is very significant while evaluating the housing price since housing price is technically a time series data. Adding this term gives us a more accurate result, but because we didn’t come up with this idea until the later period of the project, we can only examine one lagged term. If we can add a few more lagged terms, we may get a result that is closer to reality.
+
+After discussing how the 0206 Earthquake impacted the housing price in southern Taiwan, we could further examine if the same situation would happen in the housing trade, too. As a result, we choose number_of_house_trade_2016 as the dependent variable of the 2016 housing trade regression model.
+
+2016 housing trade regression model:
+
+| ht_2016_model\<-lm(number_of_house_trade_2016 \~  Medi_Service_per + Proportion_Dr_Ma_Uni_Pop+  Totalpop + magnitude_level+Ave_Income, data=final_data_1)  |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Result of the 2016 housing trade regression model:
+
+<img width="623" alt="Screen Shot 2024-07-10 at 8 07 57 PM" src="https://github.com/maggiesleepy/ici_template/assets/174100098/06420cd4-93d0-457f-9997-ff605c7124cd">
+
+
+
+From the result of the 2016 housing trade regression model, we can discover that:
+
+1.  **Totalpop:**  
+    The total population is statistically significant and has a positive impact on the 2016 housing trade, which means that as the population grows, the housing trade also become more prosperous.
+
+2.  **Magnitude_level:**  
+    The intensity of the 0206 Earthquake has a negative coefficient but the result shows that it does not have a correlation with the 2016 housing trade.
 
 3.  **Adjusted R-squared:**  
-    We can discover that the adjusted R-squared increases from 0.6541 to 0.8698, which means the lagged term is an important variable that were missing in the last model.
+    The adjusted R-squared is 0.8691, which is much higher than the 2016 housing price model. However, it still shows that there is room to improve this model.
+
+2016 housing trade lagged regression model:
+
+| ht_2016_model_lag\<-lm(number_of_house_trade_2016 \~  number_of_house_trade_2015+Medi_Service_per + Proportion_Dr_Ma_Uni_Pop+  Totalpop + magnitude_level+Ave_Income, data=final_data_1)  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Result of the 2016 housing trade lagged regression model:
+
+<img width="675" alt="Screen Shot 2024-07-10 at 8 17 33 PM" src="https://github.com/maggiesleepy/ici_template/assets/174100098/a8b01f06-fc79-4851-91c2-a721f407e950">
 
 
 
+From the result of the 2016 housing trade lagged regression model, we can discover that:
+
+1.  **number_of_house_trade_2015:**  
+    This shows statistical significance and a positive impact on the 2016 housing trade. This means that, like the 2016 housing price, the 2016 housing trade is also highly affected by its lagged term.
+
+2.  **Proportion_Dr_Ma_Uni_Pop:**  
+    This explanatory variable is close to being statistically significant, and it has a positive effect on the 2016 housing trade.
+
+3.  **Totalpop:**  
+    The total population is statistically significant, and its coefficient shows that as the area has more population, the 2016 housing trade will increase.
+
+4.  **magnitude_level:**  
+    The intensity of the 0206 Earthquake is close to being statistically significant, and it harms the 2016 housing trade. This indicates that if an area has a higher intensity, the 2016 housing trade in this area tends to drop.
+
+5.  **Ave_Income:**  
+    The average total income is also close to being statistically significant and hurts the 2016 housing trade. This result may imply that in the wealthier areas, people tend to postpone their house trading, so the 2016 housing trade drops as the average income of an area increases.
+
+6.  **Adjusted R-squared:**  
+    The adjusted R-squared of this model is 0.9657. This means that the lagged term helps improve the explanatory power of the regression model.
+
+These two housing trade regression models show that the 0206 Earthquake is not correlated with the 2016 housing trade, which is not the same as the situation of the 2016 housing price models. This result shows that the 0206 Earthquake intensity was not the main reason that impacted the 2016 housing trade.
 
 ## Results
 
 [Provide a summary of your findings and conclusions, including any recommendations or implications for future research. Be sure to explain how your results address your research question or problem statement.]
+
+
+
 
 ## Contributors
 
