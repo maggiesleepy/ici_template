@@ -224,10 +224,39 @@ Result of the 2016 housing price regression model:
 
 <img width="581" alt="Screen Shot 2024-07-10 at 6 35 56 PM" src="https://github.com/maggiesleepy/ici_template/assets/174100098/7ad64309-3b94-42f4-8dbc-d25eaac4f01b">
 
+
+
 From the result of the 2016 housing price regression model, we can discover that:
 
-**Medi_Service_per:**
-The amount of medical service for each person in an area is statistically significant but has a negative impact on the 2016 housing prices. Indicating that the more sufficient medical resources an area provides, the housing prices in 2016 will decrease
+1.  **Medi_Service_per:**  
+    The amount of medical service for each person in an area is statistically significant but has a negative impact on the 2016 housing prices. Indicating that the more sufficient medical resources an area provides, the housing prices in 2016 will decrease.
+
+2.  **Proportion_Dr_Ma_Uni_Pop:**  
+    The proportion of the population of doctor, master, and university graduates is statistically significant and has a positive impact on the 2016 housing prices.
+
+3.  **Totalpop:  
+    **Total population is close to being statistically significant but has not yet reached the bar. And it has a positive impact on the 2016 housing prices
+
+4.  **magnitude_level:  
+    **The result shows that the 0206 Earthquake intensity is not correlated with the 2016 housing prices.
+
+5.  **Adjusted R-squared:  
+    **The adjusted R-squared of this model is 0.6541, which means that the dependent variable is yet to be fully explained. It shows that there is still room for improvement.
+
+After seeing this result, we realized that we didn’t take lag periods into account, so we further conducted the 2016 housing price lagged regression model to see if the resulting adjusted R-squared would be better.
+
+2016 housing price lagged regression model:
+
+| hp_2016_model_lag\<-lm(Original_Avg_House_Price_per_Ping_2016 \~  Original_Avg_House_Price_per_Ping_2015 + Medi_Service_per + Totalpop + Ave_Income + Proportion_Dr_Ma_Uni_Pop + magnitude_level, data=final_data_1)  summary(hp_2016_model_lag) |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Result of 2016 housing price lagged regression model:
+
+<img width="720" alt="Screen Shot 2024-07-10 at 6 32 50 PM" src="https://github.com/maggiesleepy/ici_template/assets/174100098/0c5f113b-5b1a-4823-bd7f-857baedf459d">
+
+
+
+From the result of 2016 housing price lagged regression model, we can discover that:
 
 
 
