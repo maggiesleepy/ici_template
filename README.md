@@ -215,7 +215,7 @@ T_lvr_land_A 屏東-2016-4.csv
 
 2016 housing price regression model:
 
-| hp_2016_model\<-lm(Original_Avg_House_Price_per_Ping_2016 \~  Medi_Service_per + Proportion_Dr_Ma_Uni_Pop+  Totalpop + magnitude_level+Ave_Income, data=final_data_1)   summary(hp_2016_model) |
+| hp_2016_model\<-lm(Original_Avg_House_Price_per_Ping_2016 \~  Medi_Service_per + Proportion_Dr_Ma_Uni_Pop+  Totalpop + magnitude_level+Ave_Income, data=final_data_1)|
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 Result of the 2016 housing price regression model:
