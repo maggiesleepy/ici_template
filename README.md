@@ -35,6 +35,8 @@ We acquired data on all the factors from the following platforms:
 | Average Income                           | 2016 Income Tax of southern Taiwan city                 | [SEGIS](https://segis.moi.gov.tw/STATCloud/Index)                                             |
 | Population                               | 2016 Demographics of southern Taiwan city               | [SEGIS](https://segis.moi.gov.tw/STATCloud/Index)                                             |
 | Medical Resources                        | Number of Medical Clincs in Townships and Towns in 2016 | [Website of Ministry of Health and Welfare](https://dep.mohw.gov.tw/DOS/mp-113.html)          |
+| Taiwan Map                               | Boundary of townships, towns, and districts             | [DATA.GOV.TW](https://data.gov.tw/dataset/7441)                                               |
+
 
 To process all the datasets above, install RStudio first and make sure the R version is 4.2.3. Open RStudio and install the following libraries that we will later use in the data cleaning process first.
 
