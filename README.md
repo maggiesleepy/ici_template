@@ -21,7 +21,7 @@ Library list:
 | dplyr | stringr | readxl | readr |
 |-------|---------|--------|-------|
 
-In this project, we want to see if the 2016 0206 Earthquake influenced the southern Taiwan housing market, so we focus on dealing with the data from 2015 to 2017 in southern Taiwan counties.
+In this project, we aim to determine if the 0206 Earthquake in 2016 influenced the housing market in southern Taiwan. Therefore, we focus on analyzing the data from 2015 to 2017 for every district in the southern Taiwan counties listed below. There are total of 148 districts in the following counties, which means that there are 148 observations in our dataset.
 
 List of counties we focus on researching:
 
@@ -35,7 +35,7 @@ We acquired data on all the factors from the following platforms:
 
 | Factors                                  | Names of Datasets                                       | Resources Platform                                                                            |
 |------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| Seismic Intensity of The 0206 Earthquake | Meinong Earthquake Seismic Intensity Table              | [Website of Central Weather Administration](https://scweb.cwa.gov.tw/special/20160206pga.asp) |
+| Seismic Intensity of the 0206 Earthquake | Meinong Earthquake Seismic Intensity Table              | [Website of Central Weather Administration](https://scweb.cwa.gov.tw/special/20160206pga.asp) |
 | Housing Market                           | Taiwan Alll Region Real Estate Tranzaction Dataset      | [Website of Ministry of the Interior, R.O.C. (Taiwan)](https://plvr.land.moi.gov.tw/Index)    |
 | Education Level                          | 2016 Education Level of Taiwanese Population            | [SEGIS](https://segis.moi.gov.tw/STATCloud/Index)                                             |
 | Average Income                           | 2016 Income Tax of Southern Taiwan City                 | [SEGIS](https://segis.moi.gov.tw/STATCloud/Index)                                             |
@@ -63,6 +63,26 @@ We calculated the datasets above and cleaned them into the following columns:
 | Average Income                           | 2016                     | Ave_Income                                  |
 | Population                               | 2016                     | Totalpop                                    |
 | Medical Resources                        | 2016                     | Medi_Service_per                            |
+
+Meaning of each column (all data are district data):
+
+| Column names                                | Meaning                                                               |
+|---------------------------------------------|-----------------------------------------------------------------------|
+| Magnitude_level                             | The 0206 Earthquake intensity detected                                |
+| Original_Avg_House_Price_per_Ping_2015      | Average housing price per ping in 2015                                |
+| number_of_house_trade_2015                  | Number of housing trade in 2015                                       |
+| Original_Avg_House_Price_per_Ping_2016      | Average housing price per ping in 2016                                |
+| number_of_house_trade_2016                  | Number of housing trade in 2016                                       |
+| Original_Avg_House_Price_per_Ping_2017      | Average housing price per ping in 2017                                |
+| number_of_house_trade_2017                  | Number of housing trade in 2017                                       |
+| gap_Original_Avg_House_Price_per_Ping_15_17 | Housing price in 2017 – housing price in 2015                         |
+| gap_number_of_house_trade_15_17             | Housing trade in 2017 – housing trade in 2015                         |
+| gap_Original_Avg_House_Price_per_Ping_16_17 | Housing price in 2017 – housing price in 2016                         |
+| gap_number_of_house_trade_16_17             | Housing trade in 2017 – housing trade in 2016                         |
+| Proportion_Dr_Ma_Uni_Pop                    | The population proportion of doctor, master, and university graduates |
+| Ave_Income                                  | Average total income                                                  |
+| Totalpop                                    | Total population of each district                                     |
+| Medi_Service_per                            | The amount of medical service provided for each person                |
 
 After the data cleaning process, we created a dataset that combined all the columns we needed from the datasets listed above, and we called it final_data_1. In final_data_1, there are total of 42 columns, but some of them are for future development, so the table above only list the column that we use to get our result.
 
