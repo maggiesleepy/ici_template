@@ -234,14 +234,14 @@ From the result of the 2016 housing price regression model, we can discover that
 2.  **Proportion_Dr_Ma_Uni_Pop:**  
     The proportion of the population of doctor, master, and university graduates is statistically significant and has a positive impact on the 2016 housing prices.
 
-3.  **Totalpop:  
-    **Total population is close to being statistically significant but has not yet reached the bar. And it has a positive impact on the 2016 housing prices
+3.  **Totalpop:**
+    The total population is close to being statistically significant but has not yet reached the bar. And it has a positive impact on the 2016 housing prices
 
-4.  **magnitude_level:  
-    **The result shows that the 0206 Earthquake intensity is not correlated with the 2016 housing prices.
+4.  **magnitude_level:**  
+    The result shows that the 0206 Earthquake intensity is not correlated with the 2016 housing prices.
 
-5.  **Adjusted R-squared:  
-    **The adjusted R-squared of this model is 0.6541, which means that the dependent variable is yet to be fully explained. It shows that there is still room for improvement.
+5.  **Adjusted R-squared:**  
+    The adjusted R-squared of this model is 0.6541, which means that the dependent variable is yet to be fully explained. It shows that there is still room for improvement.
 
 After seeing this result, we realized that we didn’t take lag periods into account, so we further conducted the 2016 housing price lagged regression model to see if the resulting adjusted R-squared would be better.
 
