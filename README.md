@@ -213,6 +213,8 @@ T_lvr_land_A 屏東-2016-4.csv
 
 [Describe your analysis methods and include any visualizations or graphics that you used to present your findings. Explain the insights that you gained from your analysis and how they relate to your research question or problem statement.]
 
+To evaluate how the 2016 0206 Earthquake affected housing prices in southern Taiwan, we took Original_Avg_House_Price_per_Ping_2015 as our dependent variable to see if any factors correlate with it.
+
 2016 housing price regression model:
 
 | hp_2016_model\<-lm(Original_Avg_House_Price_per_Ping_2016 \~  Medi_Service_per + Proportion_Dr_Ma_Uni_Pop+  Totalpop + magnitude_level+Ave_Income, data=final_data_1)|
