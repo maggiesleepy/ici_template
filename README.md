@@ -14,6 +14,12 @@ Therefore, we have chosen to examine the impact of another significant earthquak
 
 
 ## Getting Started
+To process all the datasets above, install RStudio first and make sure the R version is 4.2.3. Open RStudio and install the following libraries that we will later use in the data cleaning process first.
+
+Library list:
+
+| dplyr | stringr | readxl | readr |
+|-------|---------|--------|-------|
 
 In this project, we want to see if the 2016 0206 Earthquake influenced the southern Taiwan housing market, so we focus on dealing with the data from 2015 to 2017 in southern Taiwan counties.
 
@@ -37,18 +43,9 @@ We acquired data on all the factors from the following platforms:
 | Medical Resources                        | Number of Medical Clincs in Townships and Towns in 2016 | [Website of Ministry of Health and Welfare](https://dep.mohw.gov.tw/DOS/mp-113.html)          |
 | Taiwan Map                               | Boundary of Townships, Towns, and Districts             | [DATA.GOV.TW](https://data.gov.tw/dataset/7441)                                               |
 
-To process all the datasets above, install RStudio first and make sure the R version is 4.2.3. Open RStudio and install the following libraries that we will later use in the data cleaning process first.
-
-Library list:
-
-| dplyr | stringr | readxl | readr |
-|-------|---------|--------|-------|
-
-After the data cleaning process, we created a dataset that combined all the columns we needed from the datasets listed above, and we called it final_data_1. In final_data_1, there are total of 42 columns, but some of them are for future development, so the table below only list the column that we use to get our result.
-
+In housing market data, we choose to use ‘ping’ as a unit since it is the most commonly used measurement for calculating the area of a house in Taiwan. In addition, the housing market can be evaluated from two aspects: 1. Housing price 2. Housing trade. Later, we are going to see if the 0206 Earthquake caused a similar impact in two aspects to see if unexpected events like earthquakes can affect the southern Taiwan housing market.
 
 We calculated the datasets above and cleaned them into the following columns:
-
 | Factors                                  |Years                     |Column names                                 |
 |------------------------------------------|--------------------------|---------------------------------------------|
 | Seismic Intensity of the 0206 Earthquake | 2016                     | Magnitude_level                             |
@@ -66,6 +63,8 @@ We calculated the datasets above and cleaned them into the following columns:
 | Average Income                           | 2016                     | Ave_Income                                  |
 | Population                               | 2016                     | Totalpop                                    |
 | Medical Resources                        | 2016                     | Medi_Service_per                            |
+
+After the data cleaning process, we created a dataset that combined all the columns we needed from the datasets listed above, and we called it final_data_1. In final_data_1, there are total of 42 columns, but some of them are for future development, so the table above only list the column that we use to get our result.
 
 ## File Structure
 
