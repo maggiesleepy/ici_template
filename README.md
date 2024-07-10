@@ -340,7 +340,7 @@ For a person who is not familiar with data analysis, I cannot finish this resear
 
 ## References
 
-Dara Sources:
+Data Sources:
 | Names of Datasets                                       | Resources Platform                                                                            |
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Meinong Earthquake Seismic Intensity Table              | [Website of Central Weather Administration](https://scweb.cwa.gov.tw/special/20160206pga.asp) |
