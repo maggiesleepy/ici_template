@@ -48,9 +48,9 @@ After the data cleaning process, we created a dataset that combined all the colu
 
 We calculated the datasets above and cleaned them into the following columns:
 
-| Factors                                  | Column names             |                                             |
+| Factors                                  |Years                     |Column names                                 |
 |------------------------------------------|--------------------------|---------------------------------------------|
-| Seismic Intensity of the 0206 Earthquake | Magnitude_level          |                                             |
+| Seismic Intensity of the 0206 Earthquake |                          | Magnitude_level                             |
 | Housing Market                           | 2015                     | Original_Avg_House_Price_per_Ping_2015      |
 |                                          |                          | number_of_house_trade_2015                  |
 |                                          | 2016                     | Original_Avg_House_Price_per_Ping_2016      |
@@ -61,10 +61,10 @@ We calculated the datasets above and cleaned them into the following columns:
 |                                          |                          | gap_number_of_house_trade_15_17             |
 |                                          | 2016 to 2017             | gap_Original_Avg_House_Price_per_Ping_16_17 |
 |                                          |                          | gap_number_of_house_trade_16_17             |
-| Education Level                          | Proportion_Dr_Ma_Uni_Pop |                                             |
-| Average Income                           | Ave_Income               |                                             |
-| Population                               | Totalpop                 |                                             |
-| Medical Resources                        | Medi_Service_per         |                                             |
+| Education Level                          |                          | Proportion_Dr_Ma_Uni_Pop                    |
+| Average Income                           |                          | Ave_Income                                  |
+| Population                               |                          | Totalpop                                    |
+| Medical Resources                        |                          | Medi_Service_per                            |
 
 ## File Structure
 
