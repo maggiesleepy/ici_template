@@ -247,8 +247,8 @@ After seeing this result, we realized that we didn’t take lag periods into acc
 
 2016 housing price lagged regression model:
 
-| hp_2016_model_lag\<-lm(Original_Avg_House_Price_per_Ping_2016 \~  Original_Avg_House_Price_per_Ping_2015 + Medi_Service_per + Totalpop + Ave_Income + Proportion_Dr_Ma_Uni_Pop + magnitude_level, data=final_data_1)  summary(hp_2016_model_lag) |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| hp_2016_model_lag\<-lm(Original_Avg_House_Price_per_Ping_2016 \~  Original_Avg_House_Price_per_Ping_2015 + Medi_Service_per + Totalpop + Ave_Income + Proportion_Dr_Ma_Uni_Pop + magnitude_level, data=final_data_1) |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 Result of 2016 housing price lagged regression model:
 
