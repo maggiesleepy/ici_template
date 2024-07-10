@@ -340,4 +340,13 @@ For a person who is not familiar with data analysis, I cannot finish this resear
 
 ## References
 
-[List any references or resources that you used during your project, including data sources, analytical methods, and tools.]
+Dara Sources:
+| Names of Datasets                                       | Resources Platform                                                                            |
+|---------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Meinong Earthquake Seismic Intensity Table              | [Website of Central Weather Administration](https://scweb.cwa.gov.tw/special/20160206pga.asp) |
+| Taiwan Alll Region Real Estate Tranzaction Dataset      | [Website of Ministry of the Interior, R.O.C. (Taiwan)](https://plvr.land.moi.gov.tw/Index)    |
+| 2016 Education Level of Taiwanese Population            | [SEGIS](https://segis.moi.gov.tw/STATCloud/Index)                                             |
+| 2016 Income Tax of Southern Taiwan City                 | [SEGIS](https://segis.moi.gov.tw/STATCloud/Index)                                             |
+| 2016 Demographics of Southern Taiwan City               | [SEGIS](https://segis.moi.gov.tw/STATCloud/Index)                                             |
+| Number of Medical Clincs in Townships and Towns in 2016 | [Website of Ministry of Health and Welfare](https://dep.mohw.gov.tw/DOS/mp-113.html)          |
+| Boundary of Townships, Towns, and Districts             | [DATA.GOV.TW](https://data.gov.tw/dataset/7441)                                               |
