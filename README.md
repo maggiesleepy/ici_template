@@ -43,7 +43,7 @@ Library list:
 | dplyr | stringr | readxl | readr |
 |-------|---------|--------|-------|
 
-After the data cleaning process, we created a dataset that combined all the columns we needed from the datasets listed above, and we called it final_data_1. In final_data_1, there are total of 43 columns, but some of them are for future development, so the table below only list the column that we use to get our result.
+After the data cleaning process, we created a dataset that combined all the columns we needed from the datasets listed above, and we called it final_data_1. In final_data_1, there are total of 42 columns, but some of them are for future development, so the table below only list the column that we use to get our result.
 
 
 We calculated the datasets above and cleaned them into the following columns:
