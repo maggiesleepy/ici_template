@@ -213,6 +213,22 @@ T_lvr_land_A 屏東-2016-4.csv
 
 [Describe your analysis methods and include any visualizations or graphics that you used to present your findings. Explain the insights that you gained from your analysis and how they relate to your research question or problem statement.]
 
+2016 housing price regression model:
+
+| hp_2016_model\<-lm(Original_Avg_House_Price_per_Ping_2016 \~  Medi_Service_per + Proportion_Dr_Ma_Uni_Pop+  Totalpop + magnitude_level+Ave_Income, data=final_data_1)  summary(hp_2016_model) |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Result of 2016 housing price lagged regression model:
+
+![](418490990b62367c6678fa156dc14463.png)
+
+From the result of 2016 housing price regression model, we can discover that:
+
+Medi_Service_per:  
+The amount of medical service for each person in an area is statistically significant but has a negative impact on the 2016 housing prices. Indicating that the more sufficient medical resources an area provide, the housing prices in 2016 will decrease
+
+
+
 ## Results
 
 [Provide a summary of your findings and conclusions, including any recommendations or implications for future research. Be sure to explain how your results address your research question or problem statement.]
