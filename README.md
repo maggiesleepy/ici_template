@@ -258,6 +258,16 @@ Result of 2016 housing price lagged regression model:
 
 From the result of 2016 housing price lagged regression model, we can discover that:
 
+1.  **Original_Avg_House_Price_per_Ping_2015:**
+    The result shows the housing price in 2015 is statistically significant and has a positive impact on the 2016 housing prices. This means that if the housing price in 2015 is high, the housing price of 2016 will also go high.
+
+2.  **magnitude_level:**
+    After adding a lagged term, the intensity of the 0206 Earthquake becomes statistically significant and has a negative correlation to the housing price of 2016. This result aligns with our hypothesis.
+
+3.  **Adjusted R-squared:**  
+    We can discover that the adjusted R-squared increases from 0.6541 to 0.8698, which means the lagged term is an important variable that were missing in the last model.
+
+
 
 
 ## Results
