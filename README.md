@@ -330,11 +330,13 @@ The future development of this project could further delve into finding the fact
 
 ## Contributors
 
-[List the contributors to your project and describe their roles and responsibilities.]
+Maggie: responsible for the data cleaning process of the 40 columns, analyzing the result of regression models, and the writer of this paper
+
+Yvonne: responsible for the data cleaning process of the 2 columns: Totalpop and Medi_Service_per
 
 ## Acknowledgments
 
-[Thank any individuals or organizations who provided support or assistance during your project, including funding sources or data providers.]
+For a person who is not familiar with data analysis, I cannot finish this research without the help of Prof. Pien Chung-Pe. Thank you for advising me through the whole semester and providing help when I was confused during the process.
 
 ## References
 
