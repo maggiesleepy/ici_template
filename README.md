@@ -1,4 +1,4 @@
-<img width="581" alt="Screen Shot 2024-07-10 at 6 35 56 PM" src="https://github.com/maggiesleepy/ici_template/assets/174100098/ff51eaf4-2cad-483b-9fd8-89e50cf4003f"># Project Title
+# Project Title
 
 The Influence of the June 2nd, 2016 Meinong Earthquake on the housing market in southern Taiwan
 
